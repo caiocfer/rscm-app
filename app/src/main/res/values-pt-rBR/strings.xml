@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">rscm-app</string>
+    <string name="Login">Entrar</string>
+    <string name="Sign_in">Registrar</string>
+    <string name="name">Nome</string>
+    <string name="username">Apelido</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">rscm-app</string>
+    <string name="Login">Login</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+</resources>
