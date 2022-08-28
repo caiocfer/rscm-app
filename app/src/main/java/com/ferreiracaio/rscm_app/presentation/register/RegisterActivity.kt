@@ -34,9 +34,6 @@ class RegisterActivity : AppCompatActivity() {
                 val newUser = User(userName, name,email,password)
                 viewModel.createNewUser(newUser)
             }
-
-
-
         }
     }
 }

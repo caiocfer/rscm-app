@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.ferreiracaio.rscm_app.databinding.ActivityMainBinding
+import com.ferreiracaio.rscm_app.presentation.login.LoginActivity
 import com.ferreiracaio.rscm_app.presentation.register.RegisterActivity
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonLogin.setOnClickListener {
-            Toast.makeText(this,"Login",Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         binding.buttonSignIn.setOnClickListener {
