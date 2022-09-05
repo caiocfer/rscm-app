@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
-            viewModel.loginUser(email,password)
+            viewModel.loginUser(email,password, this)
         }
 
 
