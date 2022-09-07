@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
-import com.ferreiracaio.rscm_app.MainActivity
+import com.ferreiracaio.rscm_app.AccessActivity
 import com.ferreiracaio.rscm_app.data.SessionManager
 import com.ferreiracaio.rscm_app.databinding.ActivitySplashBinding
 
@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
         if (token != null){
             Toast.makeText(this, "Welcome back",Toast.LENGTH_SHORT).show()
         }else{
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, AccessActivity::class.java))
             Toast.makeText(this, "Please login",Toast.LENGTH_SHORT).show()
         }
     }
