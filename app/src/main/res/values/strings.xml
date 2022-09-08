@@ -21,5 +21,8 @@
     <string name="profile">Profile</string>
     <string name="Home">Home</string>
 
+    <string name="update">Update</string>
+    <string name="Sign_out">Sign Out</string>
+
 
 </resources>
