@@ -3,13 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_person.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.187" />
+        <entry key="app/src/main/res/layout/activity_access.xml" value="0.14749893116716545" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.353125" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/content_main.xml" value="0.353125" />
-        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2625053441641727" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.14749893116716545" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.14749893116716545" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.353125" />
-        <entry key="app/src/main/res/menu/menu_main.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.22" />
       </map>
     </option>
   </component>

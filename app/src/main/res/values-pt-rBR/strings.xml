@@ -8,5 +8,8 @@
     <string name="email">Email</string>
     <string name="password">Senha</string>
 
+    <string name="search">Pesquisar</string>
+    <string name="profile">Perfil</string>
+    <string name="Home">Inicio</string>
 
 </resources>
