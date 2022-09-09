@@ -22,5 +22,9 @@ class SessionManager(context: Context) {
         return prefs.getString(USER_TOKEN, null)
     }
 
+    fun removeToken(){
+        prefs.edit().clear().commit()
+    }
+
 
 }
