@@ -22,7 +22,6 @@ class RegisterViewModel :ViewModel(){
             override fun onFailure(call: Call<User>, t: Throwable) {
                 Log.e("RegisterViewModel", "onFailure: Failed to create user $t", )
             }
-
         })
     }
 }

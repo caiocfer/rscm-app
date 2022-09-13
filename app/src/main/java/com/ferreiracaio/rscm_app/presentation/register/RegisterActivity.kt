@@ -1,9 +1,8 @@
 package com.ferreiracaio.rscm_app.presentation.register
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.ferreiracaio.rscm_app.databinding.ActivityRegisterBinding
 import com.ferreiracaio.rscm_app.models.User
@@ -33,6 +32,7 @@ class RegisterActivity : AppCompatActivity() {
             }else{
                 val newUser = User(userName, name,email,password)
                 viewModel.createNewUser(newUser)
+                finish()
             }
         }
     }

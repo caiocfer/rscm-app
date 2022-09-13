@@ -17,6 +17,9 @@ interface DbService {
     @GET("/user")
     fun getUserProfile(@Header("Authorization") token:String?):Call<User>
 
+    @GET("/search?")
+    fun searchUsers(@Header("Authorization") token:String?, @Query("user") query:String): Call<List<User>>
+
 
 
 }
