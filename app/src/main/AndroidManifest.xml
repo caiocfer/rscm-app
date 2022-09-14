@@ -17,6 +17,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.main.get_profile.GetUserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_get_user"
+            android:theme="@style/Theme.Rscmapp" />
+        <activity
             android:name=".presentation.splash.SplashActivity"
             android:exported="true"
             android:label="@string/title_activity_splash"
@@ -38,7 +43,7 @@
         <activity
             android:name=".AccessActivity"
             android:exported="true"
-            android:theme="@style/Theme.Rscmapp"/>
+            android:theme="@style/Theme.Rscmapp" />
         <activity
             android:name=".presentation.main.MainActivity"
             android:exported="false"

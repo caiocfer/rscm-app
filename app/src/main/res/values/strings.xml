@@ -23,6 +23,7 @@
 
     <string name="update">Update</string>
     <string name="Sign_out">Sign Out</string>
+    <string name="title_activity_get_user">GetUserActivity</string>
 
 
 </resources>

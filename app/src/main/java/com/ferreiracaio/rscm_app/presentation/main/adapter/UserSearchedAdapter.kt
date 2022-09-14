@@ -1,10 +1,14 @@
 package com.ferreiracaio.rscm_app.presentation.main.adapter
 
+import android.app.Activity
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ferreiracaio.rscm_app.databinding.UserSearchAdapterBinding
 import com.ferreiracaio.rscm_app.models.User
+import com.ferreiracaio.rscm_app.presentation.main.get_profile.GetUserActivity
 
 class UserSearchedAdapter(
     private val users: List<User>
@@ -23,6 +27,14 @@ class UserSearchedAdapter(
             with(users[position]){
                 binding.textUsername.text = this.username
                 binding.textName.text = this.name
+
+                binding.root.setOnClickListener {
+                    val activity = holder.binding.root.context as Activity
+                    val intent = Intent(activity, GetUserActivity::class.java)
+                    intent.putExtra("USER_DETAILS",users[position])
+
+                    activity.startActivity(intent)
+                }
             }
         }
     }
