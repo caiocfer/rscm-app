@@ -8,10 +8,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ferreiracaio.rscm_app.databinding.UserSearchAdapterBinding
 import com.ferreiracaio.rscm_app.models.User
+import com.ferreiracaio.rscm_app.models.UserRequest
 import com.ferreiracaio.rscm_app.presentation.main.get_profile.GetUserActivity
 
 class UserSearchedAdapter(
-    private val users: List<User>
+    private val users: List<UserRequest>
     ):RecyclerView.Adapter<UserSearchedAdapter.UserSearchViewHolder>(){
 
     inner class UserSearchViewHolder(val binding: UserSearchAdapterBinding) : RecyclerView.ViewHolder(binding.root)
