@@ -33,7 +33,8 @@ class LoginActivity : AppCompatActivity() {
     }
     private fun changeToHomeScreen(context: Context){
         val intent = Intent(context, MainActivity::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
+        finish()
     }
 }

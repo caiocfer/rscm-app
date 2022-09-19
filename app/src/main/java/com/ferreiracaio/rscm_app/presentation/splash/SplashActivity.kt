@@ -24,8 +24,10 @@ class SplashActivity : AppCompatActivity() {
 
         if (token != null){
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }else{
             startActivity(Intent(this, AccessActivity::class.java))
+            finish()
         }
     }
 
