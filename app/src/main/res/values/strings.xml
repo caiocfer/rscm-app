@@ -25,5 +25,9 @@
     <string name="Sign_out">Sign Out</string>
     <string name="title_activity_get_user">GetUserActivity</string>
 
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="createPost">Post</string>
+
 
 </resources>
