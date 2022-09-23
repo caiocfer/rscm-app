@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_baseline_pause_circle_outline_24.xml" value="0.188" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_circle_outline_24.xml" value="0.188" />
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.188" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.187" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.187" />
@@ -26,7 +28,7 @@
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.14108527131782947" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.353125" />
-        <entry key="app/src/main/res/layout/post_adapter.xml" value="0.46562123039806996" />
+        <entry key="app/src/main/res/layout/post_adapter.xml" value="0.5" />
         <entry key="app/src/main/res/layout/user_search_adapter.xml" value="0.25" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.22" />

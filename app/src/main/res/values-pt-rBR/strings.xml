@@ -18,6 +18,10 @@
     <string name="title">Titulo</string>
     <string name="content">Conteudo</string>
     <string name="createPost">Postar</string>
+    <string name="music_title">Nome da música</string>
+    <string name="get_music">Buscar música</string>
+
+
 
 
 </resources>

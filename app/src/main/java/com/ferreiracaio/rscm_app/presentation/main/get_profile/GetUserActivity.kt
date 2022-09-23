@@ -1,5 +1,6 @@
 package com.ferreiracaio.rscm_app.presentation.main.get_profile
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -13,17 +14,17 @@ import com.ferreiracaio.rscm_app.presentation.main.adapter.PostAdapter
 
 class GetUserActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityGetUserBinding
     private lateinit var viewModel: GetUserViewModel
     private lateinit var postAdapter: PostAdapter
+    private var mediaPlayer: MediaPlayer? = MediaPlayer()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
 
         viewModel = ViewModelProvider(this).get(GetUserViewModel::class.java)
-        postAdapter = PostAdapter(viewModel.postList)
+        postAdapter = PostAdapter(viewModel.postList,mediaPlayer!!)
         binding = ActivityGetUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -55,7 +56,8 @@ class GetUserActivity : AppCompatActivity() {
         }
     }
 
-
-
-
+    override fun onDestroy() {
+        postAdapter.clearMediaPlayer()
+        super.onDestroy()
+    }
 }

@@ -1,0 +1,18 @@
+{
+  "resourceName": "s3a5ba208e",
+  "policyUUID": "a5ba208e",
+  "bucketName": "rscmappc4cc1980f6c64b6981ed5daf0e35039a",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

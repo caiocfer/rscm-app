@@ -28,6 +28,8 @@
     <string name="title">Title</string>
     <string name="content">Content</string>
     <string name="createPost">Post</string>
+    <string name="music_title">Music Title</string>
+    <string name="get_music">Get Music</string>
 
 
 </resources>

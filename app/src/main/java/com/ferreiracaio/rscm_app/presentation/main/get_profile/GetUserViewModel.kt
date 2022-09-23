@@ -35,12 +35,15 @@ class GetUserViewModel: ViewModel() {
                             }
                         }
                         postsLiveData.value = postList
-                        Log.d("TAG", "onResponse: ${postsLiveData.value}")
+                        Log.d("TAG", "onResponse: ${postsLiveData}")
 
                     }
                 }
-            }
+                Log.d("TAG", "onResponse: ${postsLiveData.value}")
+                Log.d("TAG", "onResponse: ${postList}")
+                Log.d("TAG", "onResponse: ${response.code()}")
 
+            }
             override fun onFailure(call: Call<List<PostResponse>>, t: Throwable) {
                 TODO("Not yet implemented")
             }

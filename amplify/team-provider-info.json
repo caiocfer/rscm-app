@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rscmapp-dev-184425-authRole",
+      "UnauthRoleArn": "arn:aws:iam::668211577588:role/amplify-rscmapp-dev-184425-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::668211577588:role/amplify-rscmapp-dev-184425-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-rscmapp-dev-184425-deployment",
+      "UnauthRoleName": "amplify-rscmapp-dev-184425-unauthRole",
+      "StackName": "amplify-rscmapp-dev-184425",
+      "StackId": "arn:aws:cloudformation:sa-east-1:668211577588:stack/amplify-rscmapp-dev-184425/65fcc7d0-392d-11ed-9a61-02063b546634",
+      "AmplifyAppId": "d28emmdaf7bd3d"
+    },
+    "categories": {
+      "auth": {
+        "rscmappfecc16a6": {},
+        "true": {}
+      }
+    }
+  }
+}
