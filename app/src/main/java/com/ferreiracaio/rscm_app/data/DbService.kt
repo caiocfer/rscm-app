@@ -22,6 +22,9 @@ interface DbService {
     @POST("/posts")
     fun createPost(@Header("Authorization") token: String?, @Body createPost: CreatePostRequest):Call<CreatePostRequest>
 
+    @GET("/posts")
+    fun getFeed(@Header("Authorization") token: String?): Call<List<PostResponse>>
+
     @GET("/posts/{userId}")
     fun getUserPosts(@Header("Authorization") token: String?, @Path("userId") userID: Int): Call<List<PostResponse>>
 
