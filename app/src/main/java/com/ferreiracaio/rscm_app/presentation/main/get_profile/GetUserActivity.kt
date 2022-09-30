@@ -3,6 +3,7 @@ package com.ferreiracaio.rscm_app.presentation.main.get_profile
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.lifecycle.ViewModelProvider
@@ -29,7 +30,7 @@ class GetUserActivity : AppCompatActivity() {
         postAdapter = PostAdapter(viewModel.postList,mediaPlayer!!)
         binding = ActivityGetUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        observeIsLoading()
         val linearLayoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
 
         binding.postRecyclerView.apply {
@@ -83,6 +84,17 @@ class GetUserActivity : AppCompatActivity() {
                 binding.followButton.setText("Follow User").toString()
             }
         }
+    }
+
+    private fun observeIsLoading(){
+        viewModel.isLoading.observe(this){ isLoading ->
+            if (isLoading) {
+                binding.loadingProgress.visibility = View.VISIBLE
+            }else {
+                binding.loadingProgress.visibility = View.GONE
+            }
+        }
+
     }
 
     override fun onDestroy() {

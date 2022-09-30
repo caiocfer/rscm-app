@@ -17,7 +17,10 @@ class HomeViewModel:ViewModel() {
     val postsLiveData: MutableLiveData<List<PostResponse>> = MutableLiveData()
     val postList = ArrayList<PostResponse>()
 
+    val isLoading: MutableLiveData<Boolean> = MutableLiveData()
+
     fun getFeed(context: Context){
+        isLoading.value = true
         postList.clear()
 
         val session = SessionManager(context)
@@ -37,6 +40,7 @@ class HomeViewModel:ViewModel() {
                         }
                         postsLiveData.value = postList
                         Log.d("TAG", "onResponse: ${postsLiveData}")
+                        isLoading.value = false
 
                     }
                 }
@@ -44,6 +48,7 @@ class HomeViewModel:ViewModel() {
 
             override fun onFailure(call: Call<List<PostResponse>>, t: Throwable) {
                 Toast.makeText(context, "Failed to get feed, please try again!", Toast.LENGTH_SHORT).show()
+                isLoading.value = false
             }
 
 

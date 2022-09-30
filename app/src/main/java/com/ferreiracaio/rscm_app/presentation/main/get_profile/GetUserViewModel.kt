@@ -18,10 +18,11 @@ class GetUserViewModel: ViewModel() {
     val postList = ArrayList<PostResponse>()
 
     val isFollowing: MutableLiveData<Boolean> = MutableLiveData()
+    val isLoading: MutableLiveData<Boolean> = MutableLiveData()
 
     fun getUserPosts(context: Context, authorId: Int){
         postList.clear()
-
+        isLoading.value = true
         val session = SessionManager(context)
         val token = "Bearer ${session.fetchAuthToken().toString()}"
 
@@ -39,6 +40,7 @@ class GetUserViewModel: ViewModel() {
                         }
                         postsLiveData.value = postList
                         Log.d("TAG", "onResponse: ${postsLiveData}")
+                        isLoading.value = false
 
                     }
                 }
@@ -48,7 +50,7 @@ class GetUserViewModel: ViewModel() {
 
             }
             override fun onFailure(call: Call<List<PostResponse>>, t: Throwable) {
-                TODO("Not yet implemented")
+                isLoading.value = false
             }
 
         })
@@ -120,7 +122,6 @@ class GetUserViewModel: ViewModel() {
                         Log.d("TAG", "onResponse: ${response.code()}")
                         isFollowing.value = false
                     }
-
                 }
             }
 

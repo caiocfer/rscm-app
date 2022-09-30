@@ -36,6 +36,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         postAdapter = PostAdapter(viewModel.postList,mediaPlayer!!)
+        observeLoading()
 
         val linearLayoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL,false)
 
@@ -60,6 +61,16 @@ class HomeFragment : Fragment() {
         viewModel.postsLiveData.observe(viewLifecycleOwner) { postList ->
             postList.let {
                 postAdapter.notifyDataSetChanged()
+            }
+        }
+    }
+
+    private fun observeLoading(){
+        viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
+            if (isLoading) {
+                binding.loadingProgress.visibility = View.VISIBLE
+            }else {
+                binding.loadingProgress.visibility = View.GONE
             }
         }
     }
