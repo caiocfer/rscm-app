@@ -28,6 +28,15 @@ interface DbService {
     @GET("/posts/{userId}")
     fun getUserPosts(@Header("Authorization") token: String?, @Path("userId") userID: Int): Call<List<PostResponse>>
 
+    @POST("/users/follow/{userid}")
+    fun followUser(@Header("Authorization") token: String?, @Path("userid") userID: Int): Call<ResponseBody>
+
+    @POST("/users/unfollow/{userid}")
+    fun unfollowUser(@Header("Authorization") token: String?, @Path("userid") userID: Int): Call<ResponseBody>
+
+    @GET("/users/follow/{userid}")
+    fun getFollowing(@Header("Authorization") token: String?, @Path("userid") userID: Int): Call<ResponseBody>
+
 
 
 }
