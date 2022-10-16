@@ -12,6 +12,7 @@ import com.amplifyframework.AmplifyException
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin
 import com.amplifyframework.core.Amplify
 import com.amplifyframework.storage.s3.AWSS3StoragePlugin
+import com.ferreiracaio.rscm_app.R
 import com.ferreiracaio.rscm_app.constants.Constants
 import com.ferreiracaio.rscm_app.databinding.ActivityCreatePostBinding
 import com.ferreiracaio.rscm_app.models.CreatePostRequest
@@ -51,7 +52,8 @@ class CreatePostActivity : AppCompatActivity() {
                 viewModel.createPost(this,post)
                 finish()
             }else{
-                Toast.makeText(this,"Fields can't be empty",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,resources.getString(R.string.empty_fields),Toast.LENGTH_SHORT).show()
+
             }
         }
     }
@@ -91,12 +93,8 @@ class CreatePostActivity : AppCompatActivity() {
             val fileExtension = uri.pathSegments[1].substringAfterLast('.')
             val fileLinkName = "${UUID.randomUUID()}.$fileExtension"
             musicLink = fileLinkName
-            binding.uploadMusicButton.setText("Music Selected $uri").toString()
-            Log.d("Music Path", ": ${uri.pathSegments[1].substringAfterLast('/')}")
-            Log.d("Music Path", ": ${uri.pathSegments[1].substringAfterLast('/')}")
-            Log.d("Music Path", ": $fileExtension")
-            Log.d("Music Path URI", ": ${uri.path.toString()}")
-            Log.d("Music Path", ": ${uri.lastPathSegment}")
+
+            binding.uploadMusicButton.setText(resources.getString(R.string.music_selected)).toString()
         }
     }
 

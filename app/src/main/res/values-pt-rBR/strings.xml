@@ -21,6 +21,9 @@
     <string name="music_title">Nome da música</string>
     <string name="get_music">Buscar música</string>
 
+    <string name="empty_fields">Campos não podem estar vazios</string>
+    <string name="music_selected">Música selecionada</string>
+
 
 
 

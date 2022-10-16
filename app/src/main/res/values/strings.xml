@@ -31,5 +31,8 @@
     <string name="music_title">Music Title</string>
     <string name="get_music">Get Music</string>
 
+    <string name="empty_fields">"Fields can't be empty"</string>
+    <string name="music_selected">Music Selected</string>
+
 
 </resources>
